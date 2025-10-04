@@ -1,4 +1,4 @@
-const API_BASE = "http://<your-vps-ip>:5000/api/standings";
+const API_BASE = "https://767ef729-5e14-4e6a-a039-2b095606745e-00-132ci6akf1tqt.sisko.replit.dev";
 
 async function loadGroup(group) {
   try {
