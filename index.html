@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>League Standings</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>League Standings</h1>
+    <div class="tabs">
+      <button onclick="loadGroup('A')">Group A</button>
+      <button onclick="loadGroup('B')">Group B</button>
+      <button onclick="loadGroup('C')">Group C</button>
+      <button onclick="loadGroup('D')">Group D</button>
+      <button onclick="loadGroup('E')">Group E</button>
+      <button onclick="loadGroup('F')">Group F</button>
+      <button onclick="loadGroup('G')">Group G</button>
+      <button onclick="loadGroup('H')">Group H</button>
+    </div>
+    <div id="error"></div>
+    <table>
+      <thead>
+        <tr>
+          <th>Team</th>
+          <th>Played</th>
+          <th>Wins</th>
+          <th>Losses</th>
+          <th>Points</th>
+        </tr>
+      </thead>
+      <tbody id="standings-body"></tbody>
+    </table>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
