@@ -18,12 +18,11 @@ async function loadGroup(group = "") {
     data.forEach(team => {
       const row = `
         <tr>
-          <td>${team.name}</td>
-          <td>${team.group}</td>
-          <td>${team.played}</td>
-          <td>${team.wins}</td>
-          <td>${team.losses}</td>
-          <td>${team.points}</td>
+          <td>${team.name || team.team_name}</td>
+<td>${team.played || team.games_played || 0}</td>
+<td>${team.wins || 0}</td>
+<td>${team.losses || 0}</td>
+<td>${team.points || 0}</td>
         </tr>`;
       tbody.innerHTML += row;
     });
